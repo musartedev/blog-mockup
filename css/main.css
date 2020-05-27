@@ -180,7 +180,7 @@ hero .hero-button button a {
 
 .read-more {
   outline: none;
-  border-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   padding: 10px;
   background-color: transparent;
   cursor: pointer;
@@ -220,9 +220,66 @@ hero .hero-button button a {
   height: auto;
 }
 
+
+.blogpost-img-container img {
+    width: 100%;
+}
+
+.blogpost-main-section {
+    padding: 0 50px 40px;
+}
+
+.blogpost-main-section h3 {
+    border-bottom: 1px solid #999;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 20px;
+}
+
+.blogpost-main-section h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+.blogpost-main-section p {
+    line-height: 20px;
+}
+
+address {
+    background-color: rgb(220, 220, 220);
+    margin-top: 20px;
+    margin-bottom: 0;
+    justify-content: center;
+    display: flex;
+}
+
+address .address-section {
+    display: flex;
+    max-width: 40%;
+    padding:20px;
+    margin-left: 40px;
+}
+
+address img {
+    width: 20%;
+}
+
+.address-section .address-info{
+    padding-left: 30px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address-info .address-title {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
+}
+
+
 footer {
-  margin-top: 20px;
-  text-align: center;
+    margin: 0;
+    text-align: center;
   background-color: var(--color-primary);
   border-top: 20px solid #3b94ab;
   margin-bottom: 0;
@@ -231,3 +288,4 @@ footer {
   align-items: center;
   padding: 10px;
 }
+
