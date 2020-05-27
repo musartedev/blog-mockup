@@ -245,41 +245,37 @@ hero .hero-button button a {
 }
 
 address {
-    background-color: rgb(220, 220, 220);
-    margin-top: 20px;
-    margin-bottom: 0;
-    justify-content: center;
-    display: flex;
+  width: 100%;
+  min-height: 250px;
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-address .address-section {
-    display: flex;
-    max-width: 40%;
-    padding:20px;
-    margin-left: 40px;
+address div {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
 }
 
-address img {
-    width: 20%;
+address div a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
 }
 
-.address-section .address-info{
-    padding-left: 30px;
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+address .address-info {
+  text-align: initial;
+  margin-top: 85px;
+  padding-left: 10px;
 }
 
-.address-info .address-title {
-    font-family: 'Roboto Mono', monospace;
-    text-decoration: underline;
+address div img {
+  width: 100px;
 }
-
 
 footer {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
   background-color: var(--color-primary);
   border-top: 20px solid #3b94ab;
   margin-bottom: 0;
