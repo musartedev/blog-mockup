@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -134,39 +136,42 @@ hero .hero-button button a {
 }
 
 .featured-post {
-  width: 100%;
   background-color: rgb(220, 220, 220);
   display: grid;
-  grid-template-columns: 200px minmax(450px, 1fr) 50px minmax(450px, 1fr) 200px;
-  grid-template-rows: 60px minmax(300px, 1fr) 60px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+.featured-post-left-section {
+  justify-self: end;
 }
 
 .featured-post-tag {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
   align-self: center;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .featured-post-image {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
   margin: 0;
 }
 
 .featured-post-image img {
-  object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  max-width: 600px;
+  margin-top: 10px;
 }
 
 .featured-post-right-section {
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 1;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   align-content: stretch;
+  justify-self: start;
+  padding-left: 50px;
 }
 
 .featured-post-title {
@@ -292,7 +297,7 @@ address div img {
 }
 
 .profile-main-projects h3 {
-  border-bottom: 1px solid #999 !important;
+  border-bottom: 1px solid #999;
   padding-bottom: 35px;
   text-align: center;
   font-family: 'Roboto  Mono', monospace;

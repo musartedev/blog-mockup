@@ -1,0 +1,30 @@
+@media (max-width: 900px) {
+    .featured-post {
+        grid-template-columns: 1fr;
+    }
+    .featured-post-left-section  {
+        justify-self: center;
+    }
+    .posts-grid article {
+        max-width: 45%;
+    }
+
+    .projects-main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .posts-grid article {
+        max-width: 95%;
+    }
+
+    .projects-main-container {
+        grid-template-columns:  1fr;
+    }
+
+    .profile-main-container .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
